@@ -1,0 +1,15 @@
+1-7. Really and truly, instruciton encodings are things
+   you'll need to either memorize or keep a reference 
+   handy for. There's a good reference in the slides (I 
+   believe W9 U2) that lists the byte encoding for each
+   Y86 instruciton, as well as the valid ifun, register
+   operands, and valC.
+
+5. There's a REG_NONE register nybble in a rmmovq instruction,
+   which requires both ra and rb.
+
+6. There are only 4 ALU operations available in Y86, so the
+   only valid ifun nybbles are 0-3.
+
+7. This instruction is valid. It would be 
+   irmovq $0x0807060504030201, %rdx.

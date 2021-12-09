@@ -1,0 +1,26 @@
+For all problems, assume Y86 ISA.
+Multiple choice questions have answers listed in parenthesis.
+
+1. What instruction is encoded by the representation 
+   30 F0 00 01 00 00 00 00 00 00?
+
+2. What instruction is encoded by the representation 
+   40 02 08 00 00 00 00 00 00 00?
+
+3. What instruction is encoded by the representation 
+   63 67?
+
+4. What instruction is encoded by the representation 
+   72 7F FF FF FF 00 80 00 00?
+
+5. Is the instruction encoded by
+   the representation 40 F2 00 10 00 00 00 00 00 00 valid?
+   (Yes/No)
+
+6. Is the instruction encoded by
+   the representation 64 27 valid?
+   (Yes/No)
+
+7. Is the instruction encoded by
+   the representation 30 F2 01 02 03 04 05 06 07 08 valid?
+   (Yes/No)
