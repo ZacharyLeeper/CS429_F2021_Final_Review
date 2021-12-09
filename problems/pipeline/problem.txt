@@ -29,8 +29,8 @@ cond:
    on line 1?
    (Data, Control, None)
 
-3. What type of dependency does line 7 have
-   on line 8?
+3. What type of dependency does line 8 have
+   on line 7?
    (Data, Control, None)
 
 4. What type of hazard occurs on the PIPE implementation
