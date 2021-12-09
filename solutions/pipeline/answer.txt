@@ -1,0 +1,11 @@
+Data
+None
+Control
+Load-use
+1
+Mispredicted Branch
+2
+Return
+3
+Def-use
+3

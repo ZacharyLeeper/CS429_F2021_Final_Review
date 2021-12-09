@@ -1,0 +1,67 @@
+Multiple choice questions have answers listed in parenthesis.
+
+Suppose we have the following Y86 assembly code.
+At the start of this function, %rdi holds a pointer
+to an array of characters, and %rsi holds the
+length of that array.
+
+sum:
+    irmovq $0, %rax
+    irmovq $0, %rcx
+    irmovq $1, %rdx
+    jmp    cond
+loop:
+    mrmovq (%rdi), %r9  //line 1
+    addq   %r9, %rax    //line 2
+    addq   %rdx, %rcx   //line 3
+    addq   %rdx, %rdi   //line 4
+cond:
+    rrmovq %rsi, %r8    //line 5
+    subq   %rcx, $r8    //line 6
+    jg     loop         //line 7
+    ret                 //line 8
+
+1. What type of dependency does line 2 have
+   on line 1?
+   (Data, Control, None)
+
+2. What type of dependency does line 3 have
+   on line 1?
+   (Data, Control, None)
+
+3. What type of dependency does line 7 have
+   on line 8?
+   (Data, Control, None)
+
+4. What type of hazard occurs on the PIPE implementation
+   between lines 1 and 2?
+   (Def-use, Load-use, Mispredicted Branch, Return, None)
+
+5. How many cycles must the PIPE implementaiton lose to
+   stalling or bubbling for this hazard?
+
+6. What type of hazard could occur on the PIPE implementation
+   on line 7?
+   (Def-use, Load-use, Mispredicted Branch, Return, None)
+
+7. How many cycles must the PIPE implementaiton lose to
+   stalling or bubbling for this hazard (when it occurs)?
+
+8. What type of hazard could occur on the PIPE implementation
+   on line 8?
+   (Def-use, Load-use, Mispredicted Branch, Return, None)
+
+9. How many cycles must the PIPE implementaiton lose to
+   stalling or bubbling for this hazard?
+
+
+Suppose we're using the PIPE- implementation instead, which
+replaces forwarding with inserting nop instructions between
+data-dependent instructions.
+
+10. What type of hazard occurs on the PIPE- implementation
+   between lines 5 and 6?
+   (Def-use, Load-use, Mispredicted Branch, Return, None)
+
+11. How many nop instructions must be insterted between lines
+   5 and 6 for correct execution?
