@@ -1,5 +1,5 @@
-irmovq $1, %rax
-rmmovq %rax, 0x100(%rdx)
+irmovq $0x100, %rax
+rmmovq %rax, 0x8(%rdx)
 xorq %rsi, %rdi
 jl 0x00008000FFFFFF7F
 No
